@@ -1,4 +1,4 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,17 +10,23 @@ html {
 
 body {
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
 }
 
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
 .carousel{
     position: relative;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 600px;
     height: 700px;
     overflow: hidden;
-    box-shadow: .5rem .5rem 1rem darkgrey;
+    box-shadow: 10px 10px 30px darkgrey;
     border-radius: 3px;
 }
 
@@ -50,7 +56,7 @@ body {
     text-decoration: none;
     padding: 10px;
     margin: 5px;
-    transition: all .2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 
 .buttonsCarousel a:hover {
