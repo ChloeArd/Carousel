@@ -20,7 +20,7 @@ function unCheckAllBtns() {
 }
 
 function changeImage(index) {
-    let position = (imageWidth * imageIndex);
+    let position = imageWidth * imageIndex;
     const interval = setInterval(slide, 1);
 
     function slide() {
@@ -33,7 +33,7 @@ function changeImage(index) {
             } else if (index < imageIndex) {
                 position -= 10;
             }
-            images.style.left = '-' + pos + 'px';
+            images.style.left = '-' + position + 'px';
         }
     }
 }
