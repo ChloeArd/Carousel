@@ -52,3 +52,10 @@ function nextSlide() {
 }
 
 setInterval(() => !document.hidden && nextSlide(), IMAGE_CHANGE_DELAY);
+
+function tailleCarousel (width, height){
+    document.querySelector(".carousel").style.width = width + "px";
+    document.querySelector(".carousel").style.height = height + "px";
+}
+
+tailleCarousel(600,700);
